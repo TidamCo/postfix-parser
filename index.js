@@ -4,7 +4,7 @@ var logger = require('./lib/logger');
 
 var envEmailAddr   = '<?([^>,]*)>?';
 var postfixQid     = '[0-9A-F]{10,11}';     // default queue ids
-var postfixQidLong = '[0-9A-Za-z]{14,16}';  // optional 'long' ids
+var postfixQidLong = '[0-9A-Za-z]{13,16}';  // optional 'long' ids
 var postfixQidAny  = postfixQidLong + '|' + postfixQid;
 
 var regex = {
